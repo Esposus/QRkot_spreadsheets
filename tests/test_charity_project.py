@@ -653,7 +653,7 @@ def test_delete_charity_project_already_invested(
     )
 
 
-def test_delete_charity_project_already_closed(superuser_client, 
+def test_delete_charity_project_already_closed(superuser_client,
                                                closed_charity_project):
     response = superuser_client.delete('/charity_project/1')
     assert response.status_code == 400, (
