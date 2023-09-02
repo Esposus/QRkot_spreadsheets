@@ -65,12 +65,12 @@ UNIVERSE_DOMAIN=googleapis.com
 EMAIL=your_email@email.com
 ```
 4. Миграции для создания базы данных SQLite:
-```
+
 * инициализируйте Alembic в проекте `alembic init --template async alembic`
 * создайте файла миграции `alembic revision --autogenerate -m "migration name"`
 * примените миграций `alembic upgrade head`
 * отмена миграций `alembic downgrade`
-```
+
 5. Запустите проект:
 
 ```
